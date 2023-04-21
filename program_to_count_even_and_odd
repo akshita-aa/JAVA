@@ -1,0 +1,45 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+   int even,odd,zero;
+   int[] arr = new int [101];
+   Scanner sc = new Scanner(System.in);
+   System.out.println("enter number of elements (MAX can be 100) ");
+   int num = sc.nextInt();
+   System.out.println("Enter" +  num  +  "elements");
+   
+   for (int i=0 ; i<num ; ++i){
+   arr[i]=sc.nextInt();
+   }
+   even= zero= odd=0;
+   
+   for (int i=0;i<num;++i){
+       if (arr[i]%2==0)
+       even++;
+       else if (arr[i]%2 != 0)
+       odd++;
+   
+       else
+       zero++;
+   }
+   System.out.println("odd numbers"+odd);
+   System.out.println("even number"+even);
+   System.out.println("zero numbers"+zero);
+ 
+
+}
+}
+ 
+
+Output
+
+enter number of elements (MAX can be 100)
+3
+Enter3elements
+1
+4
+6
+odd numbers1
+even number2
+zero numbers0
